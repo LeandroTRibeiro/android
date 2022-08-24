@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+:root {
+    --cor1: white;
+    --cor2: #c5ebd6;
+    --cor3: #00ff8d;
+    --cor3: #008c6c;
+    --cor4: #00584e;
+    --cor5: #003a33;
+    --cor6: black;
+    --cor7: red;
+
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-droid: 'Bebas Neue', cursive;
+    /*'idroid', Arial, Helvetica, sans-serif;*/
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    margin: 0;
+}
+body {
+    background-color: var(--cor2);
+}
+strong {
+    color: var(--cor5);
+}
+header {
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2));
+    min-height: 140px;
+    padding: 60px 0px 0px 0px;
+    box-shadow: 1px 1px 3px black;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+img.unica {
+    max-width: 350px;
+}
+iframe {
+    display: block;
+    margin: 25px auto 25px auto;
+    width: 70%;
+}
+header > div > h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor1);
+    font-weight: lighter;
+}
+header > div {
+    text-align: center;
+    color: var(--cor1);
+    text-shadow: 1px 1px 3px black;
+}
+header > nav > a { /* quando preciso selecionar uma tag em geral não é necessario o sinal de > apenas para especificas */
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    padding: 10px 10px 9px 10px;
+    transition-duration: .5s;
+}
+header > nav > a:hover {
+    border: 1px solid var(--cor5);
+    background-color: var(--cor5);
+    border-radius: 8px 8px 0px 0px;
+}
+header > nav {
+    padding: 55px 0px 0px 10px;
+}
+
+main {
+    margin: 1px auto 10px auto;
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    box-shadow: 1px 1px 3px black;
+    padding: 20px 25px 20px 25px;
+    border-radius: 0px 0px 5px 5px;
+}
+main > section > h1 {
+    font-family: var(--fonte-droid);
+    color: var(--cor4);
+    text-shadow: 1px 1px 3px gray;
+    font-size: 2em;
+    margin: 0px 0px 15px 25px;
+}
+main > section > p {
+    text-align: justify;
+    text-indent: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 2em;
+}
+main > section > aside > p {
+    line-height: 2em;
+}
+main > section > h2 {
+    font-family: var(--fonte-droid);
+    color: var(--cor4);
+    text-shadow: 1px 1px 3px gray;
+    margin: 25px 0px 25px 25px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+main > section > div.video {
+    text-align: center;
+    background-color: var(--cor4);
+    padding-bottom: 59%;
+    margin: 0px -25px 30px -25px;
+    position: relative;
+}
+main > section > div.video > iframe {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: -2%;
+    left: 4%;
+}
+main > section > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+main > section > aside > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+main > section > aside > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+main > section > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+main > section > aside {
+    background-color: var(--cor2);
+    border-radius: 8px;
+    padding: 0px 0px 5px 0px;
+    text-align: justify;
+}
+main > section > aside > h1 {
+    background-color: var(--cor3);
+    color: var(--cor1);
+    text-indent: 20px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+ul {
+    padding: 0px;
+    text-indent: 20px;
+    list-style: none;
+    columns: 2; /* para tranformar listas em colunas */
+}
+li::before {
+    content: '✏️';
+    /* poderia ter feito o mesmo se tivesse colocado
+    list-style-type: '\numero do emoticom'; < 00A0 > espaço sem quebra 
+    list-style-position: inside;
+    */
+}
+li.list2 {
+    display: ;
+}
+main > section > aside > p {
+    text-indent: 20px;
+    margin: 15px 15px 15px 15px;
+}
+footer {
+    text-align: center;
+    font-size: 0.8em;
+}
+footer > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+footer > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
