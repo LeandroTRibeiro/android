@@ -68,7 +68,7 @@ header > nav > a { /* quando preciso selecionar uma tag em geral não é necessa
     color: var(--cor1);
     font-weight: bold;
     text-shadow: 1px 1px 3px black;
-    padding: 10px 10px 9px 10px;
+    padding: 10px 5px 9px 5px;
     transition-duration: .5s;
 }
 header > nav > a:hover {
